@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Idea打包Springboot项目为可运行jar包并发布</h1>
+    <h2>Gradle项目2018.12.25</h2>
+    <p></p>
+    <p>
+        首先强烈谴责百度搜出来的不负责的结果，99%的都不能用，80%都是重复的文章，那些什么配Artifacts生成jar没卵用，不管设置MANIFEST.MF在src/main/java，还是src,还是src/main/resource都不能用，就算生成了没有Main-class文件的MANIFEST.MF，后面手动添加Main-class也没用，其实用Gradle构建的Springboot项目，生成可运行jar包超级简单，如图：
+    </p>
+    <p></p>
+    <img src="../image/2074676-0f7f5d4f309ea9b4.png">
+    <p></p>
+    <img src="../image/2074676-e7576db60ab6d94f.png">
+    <p></p>
+    <p>
+        ----------------------------------------下面的是失败案例，不想看的可以直接跳过------------------------------------------------------
+    </p>
+    <p>
+        失败案例其中包括：
+
+        第一种不能用的：https://blog.csdn.net/qq_37105358/article/details/79467401
+    </p>
+    <p></p>
+    <img src="../image/2074676-97570c09ca1038de.png">
+    <p></p>
+    <p>
+        第二种用不了的：https://blog.csdn.net/asd1098626303/article/details/60868123
+    </p>
+    <p></p>
+    <img src="../image/2074676-24f5f1b5cc5d8b6a.png">
+    <p></p>
+    <p>
+        第三种不能用的：https://blog.csdn.net/weixin_40569991/article/details/80653229
+    </p>
+    <p></p>
+    <img src="../image/2074676-21a3e44d4b882142.png">
+</div>
+</body>
+</html>
